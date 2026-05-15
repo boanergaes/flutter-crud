@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_crud/screens/home_screen.dart';
 import 'core/app_theme.dart';
 
 void main() {
@@ -16,12 +17,7 @@ class PostApp extends StatelessWidget {
       title: 'Flutter CRUD',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
-      home: Scaffold(
-        appBar: AppBar(title: Text('Flutter CRUD'), centerTitle: false,),
-        body: const Center(
-          child: Text('My Post App.'),
-        ),
-      ),
+      home: HomeScreen(),
     );
   }
 }
